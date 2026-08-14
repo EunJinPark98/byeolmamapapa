@@ -25,6 +25,9 @@ jobs:
         uses: actions/checkout@v4
       - name: Setup Pages
         uses: actions/configure-pages@v5
+        with:
+          # 저장소에 Pages가 아직 켜져 있지 않아도 워크플로가 직접 켠다.
+          enablement: true
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
