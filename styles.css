@@ -16,8 +16,9 @@
   --maxw: 1080px;
   --radius: 20px;
 
-  /* 브랜드명 전용 명조체 */
-  --font-brand: "Nanum Myeongjo", "Apple SD Gothic Neo", "Batang", serif;
+  /* 대표 글씨(제목·브랜드명) / 서브 글씨(설명문구) */
+  --font-brand: "Gowun Batang", "Apple SD Gothic Neo", serif;
+  --font-sub: "Gowun Dodum", "Apple SD Gothic Neo", sans-serif;
 }
 
 * { box-sizing: border-box; }
@@ -35,6 +36,8 @@ body {
   overflow-x: hidden;
   word-break: keep-all;
 }
+
+h1, h2, h3 { font-family: var(--font-brand); }
 
 img { max-width: 100%; height: auto; }
 
@@ -197,6 +200,7 @@ a { color: inherit; text-decoration: none; }
 .hero__sub {
   margin: 18px 0 0;
   color: var(--muted);
+  font-family: var(--font-sub);
   font-size: clamp(0.95rem, 3.4vw, 1.05rem);
 }
 
@@ -288,6 +292,7 @@ a { color: inherit; text-decoration: none; }
   margin: 14px auto 0;
   max-width: 560px;
   color: var(--muted);
+  font-family: var(--font-sub);
   font-size: clamp(0.95rem, 3.4vw, 1.03rem);
 }
 
@@ -357,6 +362,7 @@ a { color: inherit; text-decoration: none; }
 .card__desc {
   margin: 10px 0 0;
   color: var(--muted);
+  font-family: var(--font-sub);
   font-size: 0.96rem;
 }
 
@@ -407,7 +413,7 @@ a { color: inherit; text-decoration: none; }
 }
 .value__icon { color: var(--gold-2); font-size: 1.2rem; }
 .value h3 { margin: 10px 0 6px; font-size: 1.1rem; font-weight: 700; }
-.value p { margin: 0; color: var(--muted); font-size: 0.94rem; }
+.value p { margin: 0; color: var(--muted); font-family: var(--font-sub); font-size: 0.94rem; }
 
 /* ── 문의 ─────────────────────────────────────────── */
 
@@ -423,11 +429,12 @@ a { color: inherit; text-decoration: none; }
 .footer img { border-radius: 50%; opacity: 0.85; }
 .footer__brand {
   margin: 10px 0 4px;
+  font-family: var(--font-brand);
   font-weight: 700;
   letter-spacing: 0.06em;
   color: var(--gold-1);
 }
-.footer__copy { margin: 0; color: var(--muted-dim); font-size: 0.84rem; }
+.footer__copy { margin: 0; color: var(--muted-dim); font-family: var(--font-sub); font-size: 0.84rem; }
 
 /* ── 스크롤 등장 ──────────────────────────────────── */
 
