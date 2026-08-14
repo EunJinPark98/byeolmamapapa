@@ -152,7 +152,6 @@ a { color: inherit; text-decoration: none; }
 
 .hero__brand {
   margin: 28px 0 0;
-  font-family: var(--font-brand);
   font-size: clamp(1.5rem, 5vw, 2rem);
   font-weight: 800;
   letter-spacing: 0.06em;
