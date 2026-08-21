@@ -102,6 +102,6 @@ IPv6도 함께 쓰려면 AAAA 레코드를 추가합니다.
 
 | 서비스 | 상태 | 주소 |
 |---|---|---|
-| 별빛 초대장 | 운영 중 | https://starinvite.vercel.app |
+| 별빛 초대장 | 운영 중 | https://letter.byeolmamapapa.com |
 
 주소가 바뀌면 `index.html`의 해당 카드 `href`만 고치면 됩니다.
